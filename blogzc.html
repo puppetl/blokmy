@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>游戏账号注册</title>
+    <style type="text/css">
+        body {
+            background: url(/static/timg.jpg);
+            background-size: 100%;
+        }
+
+        label {
+            color: #FFFF00;
+        }
+
+        input {
+            text-align: center;
+            border: none;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+        }
+
+        input[type=submit] {
+            border-radius: 15px;
+        }
+
+        input[type=reset] {
+            border-radius: 15px;
+        }
+
+        input:hover {
+            background-color: gold;
+        }
+
+        .c1 {
+            background: #FF8C00;
+            color: #FF8C00;
+        }
+
+        select.c3 {
+            width: 200px;
+            height: 25px;
+            border-radius: 25px;
+        }
+
+        a {
+            border-radius: 15px;
+            font-size: 30px;
+            text-decoration: none;
+            width: 200px;
+            height: 20px;
+            color: red;
+        }
+
+        .gaib:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<form class="mui-input-group" align="center" action="zc" method="post">
+    <div class="mui-input-row">
+            <h1 style="color: #FF0000;">游戏账号注册</h1>
+            <br/>
+            <br/>
+            <label>账号:</label>
+            <input type="text" class="mui-input-clear" name="name1" placeholder="请输入账号" style="border-radius: 15px;">
+            <br/>
+            <br/>
+            <label>密码:</label>
+            <input type="password" class="mui-input-clear" name="pwd1" placeholder="请输入密码" style="border-radius: 15px;">
+            <br/>
+            <br/>
+            <label>确认密码:</label>
+            <input type="password" class="mui-input-clear" name="pwd2" placeholder="确认密码" style="border-radius: 15px;">
+            <br/>
+            <input type="submit" id="submit" name="submit"/>
+            <input type="reset" value="清空"/>
+            <br/>
+            <br/>
+            <a href="blogdl.html" class="gaib">开始登陆</a>
+
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .c1{
+          font-size: 20px;
+            color: pink;
+        }
+        .ncv{
+            margin-top: 0px;
+            float: left;
+            width: 100%;
+            background-color: black;
+            color: blue;
+            font-size: 10px;
+            display: block;
+            margin-bottom: 0px;
+            padding-top: 0px;
+        }
+        .lic4 {
+				width: 25%;
+				margin-right: 0;
+				font-size: 12px;
+				position: relative;
+				float: left;
+				text-align: center;
+				line-height: 20px;
+				display: list-item;
+                list-style: none;
+			}
+        .lic4:hover{
+            background-color: #FFFF00;
+        }
+    </style>
+</head>
+<body>
+<div class="ncv">
+    <ul>
+        <li class="lic4"><a class="c1" href={{ url_for('blogzc') }} >注册</a></li>
+        <li class="lic4"><a class="c1" href={{ url_for('blogxg') }} >修改</a></li>
+        <li class="lic4"><a class="c1" href={{ url_for('blogck') }} >查看</a></li>
+        <li class="lic4"><a class="c1" href={{ url_for('blogxj') }} >新建</a></li>
+    </ul>
+</div>
+
+
+</body>
+</html>

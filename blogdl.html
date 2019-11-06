@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>游戏登陆</title>
+		<style>
+			body {
+				background: url(/static/timg.jpg);
+				background-size: 100%;
+			}
+			h1.c1{
+				top: 30%;
+				color: red;
+				text-align: center;
+			}
+			input.c2{
+				text-align: center;
+				width: 200px;
+				height: 20px;
+				border-radius: 20px;
+			}
+			input:hover{
+				background-color: gold;
+			}
+			label{
+				color: gold;
+			}
+			label:hover{
+				color: yellow;
+			}
+			label.c2{
+				color: gold;
+				font-size: 20px;
+				position: relative;
+				top: -3px;
+				left: -50px;
+			}
+			label.c2:hover{
+				color: yellow;
+				}
+			div.c3{
+				position: relative;
+				left: -60px;
+			}
+			input.c4{
+				background-color: gold;
+				width: 200px;
+				height: 40px;
+				border-radius: 20px;
+			}
+			input.c4:hover{
+				background-color: yellow;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				color: deepskyblue;
+			}
+			.ccc{
+				text-decoration: none;
+				font-size: 30px;
+				
+			}
+		</style>
+	</head>
+	<body align="center">
+		<div>
+			<div class="ccc"><a href={{ url_for('zhuye') }}>官方网址</a></div>
+			<form class="mui-input-group" method="post" {{ url_for('logintop') }}>
+				<h1 class="c1">游戏登陆</h1>
+				<br/>
+				<label>账号:</label>
+				<input class="c2" type="text" class="mui-input-clear" placeholder="请输入账号" name="name1"/>
+				<br/>
+				<br/>
+				<label>密码:</label>
+				<input class="c2" type="password" class="mui-input-clear" placeholder="请输入密码" name="pwd1"/>
+				<br/>
+				<br/>
+				<div class="c3">
+					<div class="mui-input-row mui-checkbox ">
+						<input class="c2" name="Checkbox" type="checkbox" checked>
+						<label class="c2">记住密码</label>
+						<br/>
+						<br/>
+						<input class="c2" name="Checkbox" type="checkbox" checked>
+						<label class="c2">自动登陆</label>
+					</div>
+				</div>
+				<br/>
+				<div class="c4">
+					<input class="c4" type="submit" id="submit" value="立即登陆"/>
+					<br/>
+					<a href="项目快速登陆.html">QQ快速登陆</a>
+					<br/>
+					<br/>
+                    <form action="">
+                        <a href={{ url_for('blogzc') }}>立即注册</a>
+                    </form>
+
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
